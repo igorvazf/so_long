@@ -6,7 +6,7 @@
 /*   By: igvaz-fe <igvaz-fe@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/01 18:51:37 by igvaz-fe          #+#    #+#             */
-/*   Updated: 2021/10/01 18:51:38 by igvaz-fe         ###   ########.fr       */
+/*   Updated: 2021/10/01 19:16:20 by igvaz-fe         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,8 +19,7 @@ int	animation(t_game *game)
 		game->loop++;
 		return (0);
 	}
-	else
-		game->loop = 0;
+	game->loop = 0;
 	mlx_destroy_image(game->mlx, game->img_enemie);
 	if (game->pos_enemies == 1)
 		game->img_enemie = mlx_xpm_file_to_image

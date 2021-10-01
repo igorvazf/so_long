@@ -23,7 +23,7 @@ SOURCES_BONUS	=	so_long_bonus.c \
 					gameplay_bonus.c \
 					exit_game_bonus.c \
 					moves_bonus.c \
-					animation.c
+					animation_bonus.c
 
 
 SOURCES_DIR		=	sources
