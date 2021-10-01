@@ -6,7 +6,7 @@
 /*   By: igvaz-fe <igvaz-fe@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/01 18:52:08 by igvaz-fe          #+#    #+#             */
-/*   Updated: 2021/10/01 18:52:09 by igvaz-fe         ###   ########.fr       */
+/*   Updated: 2021/10/01 19:21:13 by igvaz-fe         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -40,7 +40,8 @@ static void	player_update_image(char key, t_game *game)
 void	player_w(t_game *game)
 {
 	player_update_image('w', game);
-	if ((game->map[game->y_player][game->x_player] == 'E' && game->n_colect == 0)
+	if ((game->map[game->y_player][game->x_player] == 'E'
+		&& game->n_colect == 0)
 		|| game->map[game->y_player][game->x_player] == 'K')
 	{
 		mlx_clear_window(game->mlx, game->win);
@@ -66,7 +67,8 @@ void	player_w(t_game *game)
 void	player_s(t_game *game)
 {
 	player_update_image('s', game);
-	if ((game->map[game->y_player][game->x_player] == 'E' && game->n_colect == 0)
+	if ((game->map[game->y_player][game->x_player] == 'E'
+		&& game->n_colect == 0)
 		|| game->map[game->y_player][game->x_player] == 'K')
 	{
 		mlx_clear_window(game->mlx, game->win);
@@ -92,7 +94,8 @@ void	player_s(t_game *game)
 void	player_d(t_game *game)
 {
 	player_update_image('d', game);
-	if ((game->map[game->y_player][game->x_player] == 'E' && game->n_colect == 0)
+	if ((game->map[game->y_player][game->x_player] == 'E'
+		&& game->n_colect == 0)
 		|| game->map[game->y_player][game->x_player] == 'K')
 	{
 		mlx_clear_window(game->mlx, game->win);
@@ -118,7 +121,8 @@ void	player_d(t_game *game)
 void	player_a(t_game *game)
 {
 	player_update_image('a', game);
-	if ((game->map[game->y_player][game->x_player] == 'E' && game->n_colect == 0)
+	if ((game->map[game->y_player][game->x_player] == 'E'
+		&& game->n_colect == 0)
 		|| game->map[game->y_player][game->x_player] == 'K')
 	{
 		mlx_clear_window(game->mlx, game->win);
