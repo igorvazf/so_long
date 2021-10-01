@@ -6,7 +6,7 @@
 /*   By: igvaz-fe <igvaz-fe@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/01 18:51:51 by igvaz-fe          #+#    #+#             */
-/*   Updated: 2021/10/01 18:51:52 by igvaz-fe         ###   ########.fr       */
+/*   Updated: 2021/10/01 19:35:33 by igvaz-fe         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -40,7 +40,7 @@ static int	keypress(int keycode, t_game *game)
 {
 	if (keycode == KEY_ESC || keycode == KEY_Q)
 		exit_game(game);
-	else
+	else if (!game->endgame)
 		game_events(keycode, game);
 	return (0);
 }

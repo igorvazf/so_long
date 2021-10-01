@@ -6,7 +6,7 @@
 /*   By: igvaz-fe <igvaz-fe@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/01 18:51:55 by igvaz-fe          #+#    #+#             */
-/*   Updated: 2021/10/01 18:53:21 by igvaz-fe         ###   ########.fr       */
+/*   Updated: 2021/10/01 19:35:14 by igvaz-fe         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -45,6 +45,7 @@ void	game_init(t_game *game)
 	size_window_init(game);
 	game->win = mlx_new_window(game->mlx, game->map_w, game->map_h, "so_long");
 	game->moves = 0;
+	game->endgame = 0;
 	game->pos_enemies = 1;
 	game->loop = 0;
 	img_init(game);

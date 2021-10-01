@@ -6,7 +6,7 @@
 /*   By: igvaz-fe <igvaz-fe@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/01 18:51:06 by igvaz-fe          #+#    #+#             */
-/*   Updated: 2021/10/01 18:51:07 by igvaz-fe         ###   ########.fr       */
+/*   Updated: 2021/10/01 19:32:56 by igvaz-fe         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -46,8 +46,8 @@ void	player_w(t_game *game)
 		mlx_clear_window(game->mlx, game->win);
 		game->map[game->y_player + 1][game->x_player] = '0';
 		game->moves++;
+		game->endgame = 1;
 		map_draw(game);
-		exit_game(game);
 	}
 	else if (game->map[game->y_player][game->x_player] == '1'
 			|| game->map[game->y_player][game->x_player] == 'E')
@@ -73,8 +73,8 @@ void	player_s(t_game *game)
 		mlx_clear_window(game->mlx, game->win);
 		game->map[game->y_player - 1][game->x_player] = '0';
 		game->moves++;
+		game->endgame = 1;
 		map_draw(game);
-		exit_game(game);
 	}
 	else if (game->map[game->y_player][game->x_player] == '1'
 			|| game->map[game->y_player][game->x_player] == 'E')
@@ -100,8 +100,8 @@ void	player_d(t_game *game)
 		mlx_clear_window(game->mlx, game->win);
 		game->map[game->y_player][game->x_player - 1] = '0';
 		game->moves++;
+		game->endgame = 1;
 		map_draw(game);
-		exit_game(game);
 	}
 	else if (game->map[game->y_player][game->x_player] == '1'
 			|| game->map[game->y_player][game->x_player] == 'E')
@@ -127,8 +127,8 @@ void	player_a(t_game *game)
 		mlx_clear_window(game->mlx, game->win);
 		game->map[game->y_player][game->x_player + 1] = '0';
 		game->moves++;
+		game->endgame = 1;
 		map_draw(game);
-		exit_game(game);
 	}
 	else if (game->map[game->y_player][game->x_player] == '1'
 			|| game->map[game->y_player][game->x_player] == 'E')

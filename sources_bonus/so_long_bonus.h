@@ -6,7 +6,7 @@
 /*   By: igvaz-fe <igvaz-fe@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/01 18:52:31 by igvaz-fe          #+#    #+#             */
-/*   Updated: 2021/10/01 18:52:32 by igvaz-fe         ###   ########.fr       */
+/*   Updated: 2021/10/01 20:07:58 by igvaz-fe         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -39,6 +39,7 @@ typedef struct s_game
 	int		x_player;
 	int		y_player;
 	int		moves;
+	int		endgame;
 	int		pos_enemies;
 	int		loop;
 }	t_game;
@@ -72,5 +73,6 @@ int		exit_game(t_game *game);
 void	display_moves(t_game *game);
 int		animation(t_game *game);
 void	free_map(char **map);
+void	tombstone_draw(t_game *game);
 
 #endif

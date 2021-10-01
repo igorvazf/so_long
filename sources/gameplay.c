@@ -6,7 +6,7 @@
 /*   By: igvaz-fe <igvaz-fe@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/01 18:50:40 by igvaz-fe          #+#    #+#             */
-/*   Updated: 2021/10/01 18:50:41 by igvaz-fe         ###   ########.fr       */
+/*   Updated: 2021/10/01 19:31:24 by igvaz-fe         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -40,7 +40,7 @@ static int	keypress(int keycode, t_game *game)
 {
 	if (keycode == KEY_ESC || keycode == KEY_Q)
 		exit_game(game);
-	else
+	else if (!game->endgame)
 	{
 		game_events(keycode, game);
 		printf("Moves: %d\n", game->moves);

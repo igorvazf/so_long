@@ -6,7 +6,7 @@
 /*   By: igvaz-fe <igvaz-fe@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/01 18:51:42 by igvaz-fe          #+#    #+#             */
-/*   Updated: 2021/10/01 18:51:43 by igvaz-fe         ###   ########.fr       */
+/*   Updated: 2021/10/01 20:07:50 by igvaz-fe         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -63,4 +63,14 @@ int	map_draw(t_game *game)
 	}
 	display_moves(game);
 	return (0);
+}
+
+void	tombstone_draw(t_game *game)
+{
+	mlx_destroy_image(game->mlx, game->img_player);
+	mlx_clear_window(game->mlx, game->win);
+	game->img_player = mlx_xpm_file_to_image
+		(game->mlx, "assets/images/T.xpm", &game->img_w, &game->img_h);
+	game->endgame = 1;
+	map_draw(game);
 }

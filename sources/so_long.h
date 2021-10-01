@@ -6,7 +6,7 @@
 /*   By: igvaz-fe <igvaz-fe@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/01 18:51:26 by igvaz-fe          #+#    #+#             */
-/*   Updated: 2021/10/01 18:51:27 by igvaz-fe         ###   ########.fr       */
+/*   Updated: 2021/10/01 19:30:36 by igvaz-fe         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -38,6 +38,7 @@ typedef struct s_game
 	int		x_player;
 	int		y_player;
 	int		moves;
+	int		endgame;
 }	t_game;
 
 # define IMG_PLAYER "textures/wizard.xpm"
