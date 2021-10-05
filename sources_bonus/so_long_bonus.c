@@ -6,7 +6,7 @@
 /*   By: igvaz-fe <igvaz-fe@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/01 18:52:26 by igvaz-fe          #+#    #+#             */
-/*   Updated: 2021/10/01 18:52:27 by igvaz-fe         ###   ########.fr       */
+/*   Updated: 2021/10/05 11:34:13 by igvaz-fe         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,7 +27,8 @@ int	main(int argc, char **argv)
 		}
 		else
 		{
-			free_map(game.map);
+			if (game.map)
+				free_map(game.map);
 			printf("Error\nInvalid Map");
 			exit(1);
 		}
