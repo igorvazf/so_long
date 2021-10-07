@@ -2,7 +2,7 @@
 O so_long é um pequeno jogo 2D utilizando a biblioteca gráfica MinilibX.
 
 ### Como compilar?
-Utilizando o Makefile você pode criar o arquivo executável so_long
+Utilizando o Makefile você pode criar o arquivo executável *so_long* ou *so_long_bonus*
 ```
 make
 ```
