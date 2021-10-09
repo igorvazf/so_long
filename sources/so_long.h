@@ -41,8 +41,6 @@ typedef struct s_game
 	int		endgame;
 }	t_game;
 
-# define IMG_PLAYER "textures/wizard.xpm"
-
 # define KEY_ESC 65307
 # define KEY_Q 113
 
