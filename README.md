@@ -39,7 +39,7 @@ A quantidade de movimentos é mostrada no terminal (ou na própria tela do jogo,
 
 Você pode ver o jogo sendo executado aqui: https://www.youtube.com/watch?v=IcEGdGYS2Tk
 
-As imagens que utilizei no so_long são referentes ao jogo Terraria, porém este projeto não será comercializado de forma alguma. O so_long foi desenvolvido para ser utilizado como método de avaliação para o curso de Engenharia de Software da École 42.
+As imagens utilizadas são do jogo Terraria.
 
 
 #### More about School 42 you can find here: https://en.wikipedia.org/wiki/42_(school)
