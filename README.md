@@ -48,4 +48,4 @@ Você pode ver o jogo sendo executado aqui: https://www.youtube.com/watch?v=IcEG
 As imagens utilizadas são do jogo Terraria.
 
 
-#### More about School 42 you can find here: https://en.wikipedia.org/wiki/42_(school)
+#### Mais informações sobre a Escola 42 (inglês): https://en.wikipedia.org/wiki/42_(school)
